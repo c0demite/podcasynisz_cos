@@ -2,7 +2,7 @@
 .panel.settings { width: min(600px, calc(100vw - 32px)); }
 .settings h2 { margin-top: 20px; }
 .settings .set-slider label { display: flex; justify-content: space-between; align-items: baseline; }
-.settings .set-val { font-family: 'PS2P', monospace; font-size: 10px; color: var(--gold); }
+.settings .set-val { font-family: 'Pixelify', monospace; font-size: 13px; color: var(--gold); }
 .settings input[type=range] { width: 100%; accent-color: var(--gold); cursor: pointer; }
 
 .set-toggles { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; margin-top: 14px; }
