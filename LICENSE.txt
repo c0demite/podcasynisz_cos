@@ -1,0 +1,8 @@
+﻿Podkasynisz coś? – © 2026 c0demite. Wszelkie prawa zastrzeżone.
+
+Ta gra NIE jest oprogramowaniem open source. Możesz w nią grać za darmo w przeglądarce,
+ale bez zgody autora nie wolno kopiować, modyfikować, rozpowszechniać ani publikować
+jej kodu, grafiki ani innych elementów (z wyjątkiem zasobów stron trzecich wymienionych
+w pliku THIRD-PARTY.txt, które mają własne licencje).
+
+All rights reserved. This game is not open source.

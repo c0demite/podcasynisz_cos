@@ -1,0 +1,4 @@
+{
+  "_info": "Opcjonalne serwery TURN (pośredniczące) dla sieci, które blokują połączenia P2P. Instrukcja w README.md. Przykład wpisu: {\"urls\": \"turn:adres.serwera:3478\", \"username\": \"login\", \"credential\": \"haslo\"}",
+  "iceServers": []
+}

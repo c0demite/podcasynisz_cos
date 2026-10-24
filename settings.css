@@ -1,0 +1,44 @@
+/* Panel ustawień (src/settingsui.js) – dopasowany do style.css */
+.panel.settings { width: min(600px, calc(100vw - 32px)); }
+.settings h2 { margin-top: 20px; }
+.settings .set-slider label { display: flex; justify-content: space-between; align-items: baseline; }
+.settings .set-val { font-family: 'PS2P', monospace; font-size: 10px; color: var(--gold); }
+.settings input[type=range] { width: 100%; accent-color: var(--gold); cursor: pointer; }
+
+.set-toggles { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; margin-top: 14px; }
+.set-toggle {
+  display: flex; align-items: center; gap: 10px; margin: 0; padding: 10px 12px; text-align: left;
+  font-family: 'Pixelify', monospace; font-size: 17px; color: var(--muted);
+  background: #0e070f; border: 2px solid var(--border); box-shadow: none;
+}
+.set-toggle:active { box-shadow: none; }
+.set-toggle.on { color: var(--text); border-color: var(--gold); }
+.set-box { flex: 0 0 auto; width: 16px; height: 16px; border: 3px solid var(--border); background: #1a0e18; }
+.set-toggle.on .set-box { background: var(--gold); border-color: #8a6a10; box-shadow: inset -3px -3px 0 rgba(0,0,0,.3); }
+.set-tl { flex: 1; }
+
+.set-binds { display: grid; grid-template-columns: 1fr; gap: 4px; }
+.set-bind { display: flex; align-items: center; gap: 12px; padding: 4px 10px; background: #0e070f; border: 2px solid var(--border); font-size: 17px; }
+.set-bind > span { flex: 1; }
+.set-key {
+  flex: 0 0 auto; min-width: 120px; margin: 0; padding: 8px 10px; font-size: 10px;
+  background: #3a2535; color: var(--gold);
+}
+.set-key.wait { background: #c99a1a; color: #1a0e05; animation: set-blink .6s steps(2) infinite; }
+.set-key.locked { opacity: .55; }
+@keyframes set-blink { 50% { filter: brightness(1.35); } }
+.set-msg { min-height: 22px; margin: 8px 0 0; color: var(--gold); font-size: 16px; }
+.set-pad { margin: 0; padding: 10px 12px; background: #0e070f; border: 2px solid var(--border); font-size: 17px; color: var(--muted); }
+.set-pad.ok { color: #9fe870; border-color: var(--green); }
+
+/* Podpowiedź samouczka (opcjonalnie, jeśli integrator pokaże ją w DOM) */
+.tut-hint {
+  position: fixed; left: 50%; bottom: 12%; transform: translateX(-50%); pointer-events: none;
+  padding: 10px 16px; background: rgba(14,7,15,.88); border: 3px solid var(--gold); color: var(--text);
+  font-family: 'Pixelify', monospace; font-size: 20px; white-space: nowrap; box-shadow: 0 0 0 3px #0a050b;
+}
+@media (max-width: 480px) {
+  .set-toggles { grid-template-columns: 1fr; }
+  .set-key { min-width: 90px; }
+  .tut-hint { white-space: normal; width: calc(100vw - 32px); text-align: center; font-size: 17px; }
+}
