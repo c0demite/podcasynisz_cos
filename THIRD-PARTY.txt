@@ -1,6 +1,6 @@
 ﻿Zasoby stron trzecich użyte w grze:
 
-- Grafika i dźwięki: Kenney (kenney.nl) – Tiny Dungeon, Tiny Town, efekty dźwiękowe – licencja CC0 (pliki LICENSE w assets/).
+- Grafika i dźwięki: Kenney (kenney.nl) – Tiny Dungeon, Tiny Town, Roguelike Indoors, efekty dźwiękowe – licencja CC0 (pliki LICENSE w assets/).
 - Phaser 3 (phaser.io) – licencja MIT.
 - PeerJS (peerjs.com) – licencja MIT.
 - Czcionki: Tiny5, Press Start 2P, Pixelify Sans, Silkscreen (Google Fonts) – SIL Open Font License 1.1.
