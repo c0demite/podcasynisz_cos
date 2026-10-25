@@ -15,7 +15,7 @@
 /* ---------- nagłówek i zakładki ---------- */
 .settings .set-top { flex: none; padding: 16px 20px 0; border-bottom: 4px solid var(--s-ink); background: linear-gradient(180deg, #1d0f1c, #140a14); }
 .settings .set-title {
-  margin: 0 0 12px; text-align: center; font-family: 'Tiny5', monospace; font-size: 30px; letter-spacing: 3px; color: var(--s-gold);
+  margin: 0 0 12px; text-align: center; font-family: 'Tiny5', monospace; font-size: 30px; letter-spacing: 3px; padding-left: 3px; color: var(--s-gold);
   text-shadow: 2px 2px 0 #8a2030, 4px 4px 0 var(--s-ink), 0 0 14px rgba(255, 48, 80, .55);
 }
 .settings .set-tabs { display: flex; align-items: flex-end; justify-content: center; gap: 6px; flex-wrap: wrap; }

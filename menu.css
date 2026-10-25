@@ -55,7 +55,7 @@
   background-size: 8px 8px; background-position: 0 0, 4px 4px;
   border: 4px solid var(--gold2); box-shadow: 0 0 0 5px #3a1a0c, 0 0 0 9px var(--ink), inset 0 0 0 3px rgba(0,0,0,.25), inset 0 0 70px rgba(0,0,0,.4), 0 14px 30px rgba(0,0,0,.5); }
 .mm-felt-h { position: absolute; top: -18px; left: 50%; transform: translateX(-50%); }
-.mm-felt-h span { display: inline-block; padding: 2px 22px; background: #7a1424; border: 3px solid var(--gold); box-shadow: 0 0 0 3px var(--ink), 0 0 14px rgba(255,48,80,.45);
+.mm-felt-h span { display: inline-block; padding: 2px 16px 2px 22px; background: #7a1424; border: 3px solid var(--gold); box-shadow: 0 0 0 3px var(--ink), 0 0 14px rgba(255,48,80,.45);
   font-family: 'Tiny5', monospace; font-size: 22px; letter-spacing: 6px; color: var(--gold); text-shadow: 2px 2px 0 var(--ink); }
 .mm-play-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 18px; align-items: stretch; }
 .mm button { transition: transform .08s, box-shadow .12s, border-color .12s; }
@@ -107,7 +107,7 @@
 .mm-stake .mu-stakepicker { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; flex: 1; min-width: 0; }
 .mm-stake .mu-stakepicker > label { margin: 0; font-family: 'Tiny5', monospace; font-size: 18px; color: var(--gold); text-shadow: 2px 2px 0 var(--ink); }
 .mm-stake .mu-stakes { gap: 6px; }
-.mm-stake .mu-stakes button { flex: 0 0 auto; width: 36px; height: 36px; padding: 0; margin: 0; border-radius: 50%; font-size: 15px; background: #0e070f;
+.mm-stake .mu-stakes button { flex: 0 0 auto; width: 36px; height: 36px; padding: 0; margin: 0; border-radius: 50%; display: inline-grid; place-items: center; line-height: 1; letter-spacing: 0; text-indent: 0; font-size: 15px; background: #0e070f;
   border: 3px dashed currentColor; box-shadow: 0 0 0 2px var(--ink); }
 .mm-stake .mu-stakes button:hover:not(:disabled) { transform: translateY(-2px); }
 .mm-stake .mu-stakes button.sel { border-style: solid; background: #2a1a10; box-shadow: 0 0 0 2px var(--ink), 0 0 12px currentColor; transform: translateY(-2px); }
