@@ -225,3 +225,6 @@
 .mm.calm .mm-walker { position: static; }
 .mm.calm .mm-fl { transform: translateY(var(--y, 50vh)); }
 .mm-acc { margin-left: auto; color: var(--gold); border-color: #7a5a20; }
+.mm-frn { margin-left: auto; }
+.mm-frn + .mm-acc { margin-left: 0; }
+.mm-frn b { color: #8fe08f; }
