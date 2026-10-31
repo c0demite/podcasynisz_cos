@@ -31,7 +31,7 @@ b { color: #fff4c0; font-weight: normal; }
 <p class="muted">Podkasynisz coś? · ostatnia zmiana: 31 października 2026</p>
 
 <div class="box">
-  <p><b>W skrócie:</b> bez konta gra nie zbiera o Tobie żadnych danych – wszystko zostaje w Twojej przeglądarce. Jeśli założysz konto, przechowujemy Twój e-mail, postęp w grze i listę znajomych, żeby działały zapis w chmurze i gra ze znajomymi. Konto i wszystkie dane usuniesz sam w grze: <b>Konto → Usuń konto</b>.</p>
+  <p><b>W skrócie:</b> bez konta gra nie zbiera o Tobie żadnych danych – wszystko zostaje w Twojej przeglądarce. Jeśli założysz konto, przechowujemy Twój e-mail, postęp w grze, listę znajomych i wyniki wyzwań, żeby działały zapis w chmurze, gra ze znajomymi i rankingi. <b>Twój nick i wynik w wyzwaniu dnia / tygodnia są publicznie widoczne w rankingu.</b> Konto i wszystkie dane usuniesz sam w grze: <b>Konto → Usuń konto</b>.</p>
 </div>
 
 <h2>Kto odpowiada za dane</h2>
@@ -41,6 +41,7 @@ b { color: #fff4c0; font-weight: normal; }
 <ul>
   <li>Postęp (punkty, odblokowania, sejf, zbrojownia), ustawienia i imię z plakietki są zapisane tylko w pamięci Twojej przeglądarki (localStorage) i nigdzie nie są wysyłane.</li>
   <li>Nie używamy reklam, analityki ani ciasteczek śledzących.</li>
+  <li>Jedyny wyjątek to automatyczne <a href="#bledy">zgłoszenia błędów</a> (opis niżej).</li>
 </ul>
 
 <h2>Gra z kontem – co przechowujemy</h2>
@@ -49,11 +50,16 @@ b { color: #fff4c0; font-weight: normal; }
   <li><b>Zapis postępu</b> – kopia tego, co gra trzyma w przeglądarce, żeby działał na kilku urządzeniach.</li>
   <li><b>Nick i kod znajomego</b> – widzą je gracze, którym podasz swój kod, i Twoi znajomi.</li>
   <li><b>Znajomi i prośby o dodanie</b>.</li>
+  <li><b>Wyniki wyzwań dnia i tygodnia</b> (wynik, piętro, czas, wygrana) – po runie wyzwania z kontem wynik trafia do rankingu. <b>Nick i wynik są widoczne publicznie</b> dla każdego, kto otworzy ranking (także bez konta); e-mail i inne dane nie. Wyniki starsze niż pół roku są kasowane.</li>
   <li><b>Status online</b> (np. „w menu”, „gra solo”) i <b>czas ostatniej aktywności</b> – widzą je tylko Twoi znajomi.</li>
   <li><b>Zaproszenia do gry</b> – kasowane automatycznie po 3 minutach.</li>
   <li><b>Dane techniczne</b> – dostawca serwera (Supabase) zapisuje w dziennikach m.in. adres IP przy logowaniu, żeby chronić konta przed nadużyciami.</li>
 </ul>
 <p>Dane są potrzebne do działania konta, o które prosisz (art. 6 ust. 1 lit. b RODO). Przechowujemy je do czasu usunięcia konta.</p>
+
+<h2 id="bledy">Zgłoszenia błędów</h2>
+<p>Gdy w grze wystąpi błąd, gra wysyła krótkie zgłoszenie na nasz serwer (Supabase) – <b>także przy grze bez konta</b>. Zawiera ono: treść błędu i miejsce w kodzie, wersję gry, akt i piętro, tryb gry (solo, host, gość), nazwę przeglądarki i systemu (tzw. user agent), a jeśli jesteś zalogowany – identyfikator konta (bez e-maila). Nie wysyłamy postępu, imienia z plakietki ani niczego, co wpisujesz w grze. Zgłoszeń jest najwyżej kilka na sesję, a każdy błąd trafia tylko raz.</p>
+<p>Służą wyłącznie do znajdowania i naprawiania usterek (prawnie uzasadniony interes, art. 6 ust. 1 lit. f RODO). Usuwamy je po 90 dniach; po usunięciu konta zgłoszenia tracą powiązanie z nim.</p>
 
 <h2>Kto jeszcze uczestniczy</h2>
 <ul>
@@ -65,7 +71,7 @@ b { color: #fff4c0; font-weight: normal; }
 
 <h2>Twoje prawa</h2>
 <ul>
-  <li>Możesz w każdej chwili <b>usunąć konto</b> w grze (Konto → Usuń konto). Usuwa to od razu e-mail, hasło, zapis na koncie, nick, kod, znajomych i zaproszenia.</li>
+  <li>Możesz w każdej chwili <b>usunąć konto</b> w grze (Konto → Usuń konto). Usuwa to od razu e-mail, hasło, zapis na koncie, nick, kod, znajomych, zaproszenia i wyniki w rankingach.</li>
   <li>Masz prawo dostępu do swoich danych, ich poprawienia, przeniesienia, ograniczenia przetwarzania i sprzeciwu – napisz przez zgłoszenia na GitHubie (bez danych w treści).</li>
   <li>Możesz złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych (uodo.gov.pl).</li>
 </ul>
