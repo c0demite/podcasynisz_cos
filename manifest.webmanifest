@@ -1,0 +1,16 @@
+{
+  "name": "Podkasynisz coś?",
+  "short_name": "Podkasynisz",
+  "description": "Kooperacyjny roguelike – rozbijcie bank razem!",
+  "lang": "pl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#120a14",
+  "theme_color": "#120a14",
+  "icons": [
+    { "src": "assets/itch/app-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/itch/app-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
