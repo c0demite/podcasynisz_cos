@@ -228,3 +228,4 @@
 .mm-frn { margin-left: auto; }
 .mm-frn + .mm-acc { margin-left: 0; }
 .mm-frn b { color: #8fe08f; }
+.mm-disc a { color: inherit; text-decoration: underline; }

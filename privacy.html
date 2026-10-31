@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prywatność – Podkasynisz coś?</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/itch/favicon.png">
+<style>
+@font-face { font-family: 'Tiny5'; src: url('assets/fonts/tiny5-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+2000-206F; }
+@font-face { font-family: 'Tiny5'; src: url('assets/fonts/tiny5-latin-ext.woff2') format('woff2'); unicode-range: U+0100-024F, U+1E00-1EFF; }
+@font-face { font-family: 'Pixelify'; src: url('assets/fonts/pixelify-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+2000-206F; }
+@font-face { font-family: 'Pixelify'; src: url('assets/fonts/pixelify-latin-ext.woff2') format('woff2'); unicode-range: U+0100-024F, U+1E00-1EFF; }
+:root { --bg: #120a14; --panel: #1f1220; --panel2: #2a1728; --gold: #ffd84a; --text: #f3e6d0; --muted: #b8a7a0; --border: #5a3040; }
+html { background: var(--bg); }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Pixelify', system-ui, sans-serif; font-size: 18px; line-height: 1.6; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-family: 'Tiny5', monospace; color: var(--gold); font-size: 38px; line-height: 1.1; margin: 0 0 6px; }
+h2 { font-family: 'Tiny5', monospace; color: var(--gold); font-size: 24px; margin: 32px 0 8px; }
+p, li { margin: 8px 0; }
+ul { padding-left: 22px; }
+a { color: var(--gold); }
+.muted { color: var(--muted); font-size: 15px; }
+.box { background: var(--panel); border: 3px solid var(--border); padding: 12px 16px; margin: 16px 0; }
+b { color: #fff4c0; font-weight: normal; }
+.back { display: inline-block; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+<h1>PRYWATNOŚĆ</h1>
+<p class="muted">Podkasynisz coś? · ostatnia zmiana: 31 października 2026</p>
+
+<div class="box">
+  <p><b>W skrócie:</b> bez konta gra nie zbiera o Tobie żadnych danych – wszystko zostaje w Twojej przeglądarce. Jeśli założysz konto, przechowujemy Twój e-mail, postęp w grze i listę znajomych, żeby działały zapis w chmurze i gra ze znajomymi. Konto i wszystkie dane usuniesz sam w grze: <b>Konto → Usuń konto</b>.</p>
+</div>
+
+<h2>Kto odpowiada za dane</h2>
+<p>Grę tworzy i prowadzi jej autor, c0demite (osoba prywatna). W sprawach prywatności i danych pisz przez <a href="https://github.com/c0demite/podcasynisz_cos/issues" target="_blank" rel="noopener">zgłoszenia na GitHubie</a>. Zgłoszenia są publiczne, więc nie wpisuj w nich e-maila ani innych danych – napisz tylko, czego potrzebujesz, a odpowiemy, jak przekazać prośbę prywatnie.</p>
+
+<h2>Gra bez konta</h2>
+<ul>
+  <li>Postęp (punkty, odblokowania, sejf, zbrojownia), ustawienia i imię z plakietki są zapisane tylko w pamięci Twojej przeglądarki (localStorage) i nigdzie nie są wysyłane.</li>
+  <li>Nie używamy reklam, analityki ani ciasteczek śledzących.</li>
+</ul>
+
+<h2>Gra z kontem – co przechowujemy</h2>
+<ul>
+  <li><b>Adres e-mail i hasło</b> – do logowania. Hasło jest przechowywane wyłącznie jako zaszyfrowany skrót; nikt (także autor gry) nie zna jego treści.</li>
+  <li><b>Zapis postępu</b> – kopia tego, co gra trzyma w przeglądarce, żeby działał na kilku urządzeniach.</li>
+  <li><b>Nick i kod znajomego</b> – widzą je gracze, którym podasz swój kod, i Twoi znajomi.</li>
+  <li><b>Znajomi i prośby o dodanie</b>.</li>
+  <li><b>Status online</b> (np. „w menu”, „gra solo”) i <b>czas ostatniej aktywności</b> – widzą je tylko Twoi znajomi.</li>
+  <li><b>Zaproszenia do gry</b> – kasowane automatycznie po 3 minutach.</li>
+  <li><b>Dane techniczne</b> – dostawca serwera (Supabase) zapisuje w dziennikach m.in. adres IP przy logowaniu, żeby chronić konta przed nadużyciami.</li>
+</ul>
+<p>Dane są potrzebne do działania konta, o które prosisz (art. 6 ust. 1 lit. b RODO). Przechowujemy je do czasu usunięcia konta.</p>
+
+<h2>Kto jeszcze uczestniczy</h2>
+<ul>
+  <li><b>Supabase</b> – baza danych, logowanie i wysyłka e-maili (potwierdzenie konta, reset hasła).</li>
+  <li><b>GitHub Pages</b> – serwuje pliki gry; jak każdy serwer widzi adres IP przy pobieraniu strony.</li>
+  <li><b>PeerJS Cloud</b> oraz serwery STUN firm <b>Google</b> i <b>Twilio</b> – pomagają nawiązać połączenie przy grze z innymi (także bez konta).</li>
+</ul>
+<p>Gra wieloosobowa łączy graczy bezpośrednio (peer-to-peer), dlatego osoby przy tym samym stole mogą technicznie poznać Twój adres IP. Część tych usług może przetwarzać dane poza Europejskim Obszarem Gospodarczym – na podstawie zabezpieczeń wymaganych przez RODO (np. standardowych klauzul umownych).</p>
+
+<h2>Twoje prawa</h2>
+<ul>
+  <li>Możesz w każdej chwili <b>usunąć konto</b> w grze (Konto → Usuń konto). Usuwa to od razu e-mail, hasło, zapis na koncie, nick, kod, znajomych i zaproszenia.</li>
+  <li>Masz prawo dostępu do swoich danych, ich poprawienia, przeniesienia, ograniczenia przetwarzania i sprzeciwu – napisz przez zgłoszenia na GitHubie (bez danych w treści).</li>
+  <li>Możesz złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych (uodo.gov.pl).</li>
+</ul>
+
+<h2>Wiek</h2>
+<p>Konto mogą zakładać osoby, które mają co najmniej 16 lat, albo młodsze za zgodą rodzica lub opiekuna. Gra bez konta jest dostępna dla każdego.</p>
+
+<h2>Wirtualne żetony</h2>
+<p>Żetony i punkty w grze są wirtualne i nic nie są warte. Gra nie przyjmuje żadnych płatności.</p>
+
+<a class="back" href="./">← Wróć do gry</a>
+</main>
+</body>
+</html>
